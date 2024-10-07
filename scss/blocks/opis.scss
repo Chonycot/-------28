@@ -1,0 +1,144 @@
+@import '../variables';
+
+.opis {
+    padding: 100px 0;
+    position: relative;
+
+
+    &_title {
+        margin-top: 30px;
+        width: 713px;
+        color: var($Grayscale50 , #333);
+        font-family: 'Montserrat';
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+    }
+
+    // &_linia {
+    //     position: relative; /* Это нужно для корректного позиционирования псевдоэлемента */
+    //     color: var($Grayscale50 , #000);
+    //     font-family: 'Montserrat';
+    //     font-size: 16px;
+    //     font-style: normal;
+    //     font-weight: 500;
+    //     line-height: 150%;
+    //     text-transform: uppercase;
+    //     &::after {
+    //         position: absolute;
+    //         content: '';
+    //         top: 150px;
+    //         right: 0;
+    //         width: 400px;
+    //         height: 2px;
+    //         background: #000;
+    //     }
+    // }
+
+    &_linia {
+        color: var($Grayscale50 , #000);
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        text-transform: uppercase;
+
+        &::after {
+            position: absolute;
+            content: '';
+            top: 150px;
+            right: 0;
+            width: 400px;
+            height: 2px;
+            background: #000;
+        }
+    }
+
+
+
+    &_abz1_p {
+        margin-top: 46px;
+        width: 554px;
+        color: var(--Grayscale-10, #9C9C9C);
+        font-family: 'Montserrat';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        margin-bottom: 98px;
+    }
+
+    &_grid {
+        display: grid;
+        background-color: #2C3878;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 125px);
+        justify-content: center;
+        padding-left: 68px;
+        padding-top: 55px;
+        padding-bottom: 55px;
+        width: 1200px;
+        height: 460px;
+        flex-shrink: 0;
+
+        &_img {
+            float: left;
+            
+        }
+
+        &_p {
+            align-content: end;
+            width: 240px;
+            margin-left: 30px;
+            color: var(--Grayscale-White, #FFF);
+            font-family: 'Montserrat';
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%;
+        }
+
+        &_div {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &_abz2_p {
+        margin-left: 613px;
+        margin-top: 85px;
+        width: 554px;
+        color: var(--Grayscale-10, #9C9C9C);
+        font-family: 'Montserrat';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+    }
+
+    &_button {
+        display: inline-flex;
+        padding: 14px 32px;
+        align-items: flex-start;
+        gap: 10px;
+        background-color: #2C3878;
+        margin-left: 613px;
+        margin-top: 17px;
+        margin-bottom: 100px;
+        border: none;
+        &:hover{
+            transform: scale(1.03);
+        }
+    }
+    // &_img {
+    //     position: fixed;
+    //     left: 0;
+    //     right: 0;
+    //     width: 100vw;
+    //     height: 436px;
+
+}
+      
+
