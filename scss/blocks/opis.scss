@@ -1,11 +1,32 @@
 @import '../variables';
 
 .opis {
+    
     padding: 100px 0;
     position: relative;
 
+    &_linia{
+        color: var($Grayscale50 , #000);
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        text-transform: uppercase;
+        margin-bottom: 30px;
 
-    &_title {
+        &::after {
+            position: absolute;
+            content: '';
+            top: 150px;
+            right: 0;
+            width: 400px;
+            height: 2px;
+            background: #000;
+        }
+    }
+
+    &_title{
         margin-top: 30px;
         width: 713px;
         color: var($Grayscale50 , #333);
@@ -34,29 +55,7 @@
     //         height: 2px;
     //         background: #000;
     //     }
-    // }
-
-    &_linia {
-        color: var($Grayscale50 , #000);
-        font-family: 'Montserrat';
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 150%;
-        text-transform: uppercase;
-
-        &::after {
-            position: absolute;
-            content: '';
-            top: 150px;
-            right: 0;
-            width: 400px;
-            height: 2px;
-            background: #000;
-        }
-    }
-
-
+    // }   
 
     &_abz1_p {
         margin-top: 46px;

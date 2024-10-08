@@ -1,0 +1,73 @@
+@import '../variables';
+
+.pdf {
+
+    padding: 100px 0;
+    position: relative;
+
+    &_linia {
+        color: var($Grayscale50 , #000);
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+
+        &::after {
+            position: absolute;
+            content: '';
+            top: 150px;
+            right: 0;
+            width: 529px;
+            height: 2px;
+            background: #000;
+        }
+    }
+
+    &_title {
+        margin-top: 20px;
+        color: var(--Grayscale-50, #333);
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+    }
+
+    &_flex {
+        display: flex;
+        align-items: center;
+
+        &_image {
+            float: right;
+        }
+
+        &_spis {
+            color: var(--Grayscale-10, #9C9C9C);
+            font-family: "Montserrat";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%;
+            width: 634px;
+            height: 87px;
+            margin-left: 22px;
+            margin-right: 16px;
+            margin-top: 20px;
+        }
+    }
+
+    &__link_button {
+        margin-top: 46px;
+        display: inline-flex;
+        padding: 14px 34px 14px 32px;
+        align-items: flex-start;
+        gap: 10px;
+        background: var(--Primary-Blue-100, #2C3878);
+        &:hover{
+            transform: scale(1.03);
+        }
+    }
+}
