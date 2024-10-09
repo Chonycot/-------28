@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/header.min.css">
   <link rel="stylesheet" href="css/hero.min.css">
+  <link rel="stylesheet" href="css/footer.min.css">
   <title>БК “Ясенево” | Расположение</title>
 </head>
 <body>
@@ -44,62 +45,76 @@
           <img class="hero__image" src="assets/images/Mask group-1.png" alt="Бизнес квартал">
           <p>Бизнес-квартал «Ясенево» расположен на пересечении ключевых маршрутов локации – в 1 мин. от действующей станции метро и автотрассы СБВ (дублёр МКАД) с удобным съездом на парковку. Здесь проходит единственный путь от жилых районов к метро, что обеспечивает высокую активность пешеходного трафика.</p>
         </section>
+      </div>
         <section>
-          <p>расположение</p>
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5d0ca8f288f13419f0b3f51008f02c518df1f0dbf9cd9b419d6a95903a021021&amp;source=constructor" width="100%" height="825" frameborder="0"></iframe>
+          <p style="map_linia">расположение</p>
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5d0ca8f288f13419f0b3f51008f02c518df1f0dbf9cd9b419d6a95903a021021&amp;source=constructor" width="100%" height="825" frameborder="0" class="map"></iframe>
         </section>
-        <section>
-          <p>инфраструктура</p>
-          <h2>Район с готовой инфраструктурой</h2>
-          <div class="inf_grid">
-            <div class="inf_grid_1">
-              <img src="assets\images\inf 1.png" alt="">
-              <p>Торгово-офисный центр с крытым переходом из метро</p>
+      <div class="container">
+          <section class="inf">
+            <p style="inf_linia">Инфраструктура</p>
+            <h2 class="inf_title">Район с готовой инфраструктурой</h2>
+            <div class="inf_grid">
+              <div class="inf_grid_1">
+                <p>Торгово-офисный центр с крытым переходом из метро</p>
+              </div>
+              <div class="inf_grid_2">
+                <p>Уникальные пространства для резидентов бизнес центра</p>
+              </div>
+              <div class="inf_grid_3">
+                <p>«Уличная гостиная» с удобной мебелью</p>
+              </div>
+              <div class="inf_grid_4">
+                <p>Подземная и наземная парковка с электро-зарядками</p>
+              </div>
+              <div class="inf_grid_5">
+                <p>Благоустройство более 7Га с выходом к набережной</p>
+              </div>
+              <div class="inf_grid_6">
+                <p>Магазины, панорамный ресторан, шоу-румы, эвенты</p>
+              </div>
             </div>
-            <div class="inf_grid_2">
-              <img src="assets\images\inf 2.png" alt="">
-              <p>Уникальные пространства для резидентов бизнес центра</p>
-            </div>
-            <div class="inf_grid_3">
-              <img src="assets\images\inf 3.png" alt="">
-              <p>«Уличная гостиная» с удобной мебелью</p>
-            </div>
-            <div class="inf_grid_4">
-              <img src="assets\images\inf 4.png" alt="">
-              <p>Подземная и наземная парковка с электро-зарядками</p>
-            </div>
-            <div class="inf_grid_5">
-              <img src="assets\images\inf 5.png" alt="">
-              <p>Благоустройство более 7Га с выходом к набережной</p>
-            </div>
-            <div class="inf_grid_6">
-              <img src="assets\images\inf 6.png" alt="">
-              <p>Магазины, панорамный ресторан, шоу-румы, эвенты</p>
-            </div>
-          </div>
-        </section>
+          </section>
+
+        
         <section class="pdf">
+          <p class="pdf_linia">Подробно</p>
           <h2 class="pdf__title">Вся информация о проекте — в презентации</h2>
-          <ul>
-            <li>25 слайдов подробной информации</li>
-            <li>Инфраструктура, благоустройство, расположение</li>
-            <li>Инжененрия, концепция и тд.</li>
-          </ul>
-          <a href="/assets/Obrazets-polnogo-dizai-n-proekta-1.pdf" class="pdf__link pdf__link_button">Скачать презентацию</a>
-          <img src="assets/images/image 6.png" alt="" class="pdf__image">
+          <div class="pdf_flex">
+            <ul class="pdf_flex_spis">
+              <li>25 слайдов подробной информации</li>
+              <li>Инфраструктура, благоустройство, расположение</li>
+              <li>Инжененрия, концепция и тд.</li>
+            </ul>
+            <img src="assets/images/image 6.png" alt="" class="pdf__flex_image">
+          </div>
+
+          <a href="/assets/Obrazets-polnogo-dizai-n-proekta-1.pdf" class="pdf__link pdf__link_button">Скачать
+            презентацию</a>
         </section>
       </div>
     </main>
-    <footer class="footer"></footer>
-      <p>
-        Подберем лучшее помещение под ваши задачи, основываясь на аналитике бизнес-среды в локации.
-      </p>
-      <p>+7 (495) 221-40-22</p>
-      <From action “” method=“get”>
-        <input type="text" id="name" reqaired>
-        <input type="tel" id="tel" reqaired>
-      </From>
-      <button>Получить консультацию</button>
+    <footer class="footer">
+      <div class="footer_grid">
+        <div class="footer_grid_1">
+          <p class="footer_grid_1_text">
+            Подберем лучшее помещение под ваши задачи, основываясь на аналитике бизнес-среды в локации.
+          </p>
+        </div>
+        <div class="footer_grid_2">
+          <p class="footer_grid_2_text_2">БК “Ясенево”</p>
+        </div>
+        <div class="footer_grid_3">
+          <p class="footer_grid_3_text_3">+7 (495) 221-40-22</p>
+        </div>
+        <div class="footer_grid_4">
+          <From action “” method=“get”>
+            <input type="text" id="name" placeholder="    Ваше имя" reqaired >
+            <input type="tel" id="tel" placeholder="    +7 987 654 32 10" reqaired>
+          </From>
+          <button class="footer_grid_4_button"><a href="/">Получить консультацию</a></button>
+        </div>
+      </div>
     </footer>
   </div>
 </body>

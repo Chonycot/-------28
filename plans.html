@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/header.min.css">
   <link rel="stylesheet" href="css/hero.min.css">
+  <link rel="stylesheet" href="css/footer.min.css">
   <title>БК “Ясенево” | Планировки</title>
 </head>
 <body>
@@ -79,29 +80,46 @@
             </div>
           </div>
         </section>
-        <img src="assets\images\Mask group-3.png" alt="">
+        <img src="assets\images\Mask group-3.png" alt="" class="main_img">
+        
         <section class="pdf">
+          <p class="pdf_linia">Подробно</p>
           <h2 class="pdf__title">Вся информация о проекте — в презентации</h2>
-          <ul>
-            <li>25 слайдов подробной информации</li>
-            <li>Инфраструктура, благоустройство, расположение</li>
-            <li>Инжененрия, концепция и тд.</li>
-          </ul>
-          <a href="/assets/Obrazets-polnogo-dizai-n-proekta-1.pdf" class="pdf__link pdf__link_button">Скачать презентацию</a>
-          <img src="assets/images/image 6.png" alt="" class="pdf__image">
+          <div class="pdf_flex">
+            <ul class="pdf_flex_spis">
+              <li>25 слайдов подробной информации</li>
+              <li>Инфраструктура, благоустройство, расположение</li>
+              <li>Инжененрия, концепция и тд.</li>
+            </ul>
+            <img src="assets/images/image 6.png" alt="" class="pdf__flex_image">
+          </div>
+
+          <a href="/assets/Obrazets-polnogo-dizai-n-proekta-1.pdf" class="pdf__link pdf__link_button">Скачать
+            презентацию</a>
         </section>
       </div>
     </main>
-    <footer class="footer"></footer>
-      <p>
-        Подберем лучшее помещение под ваши задачи, основываясь на аналитике бизнес-среды в локации.
-      </p>
-      <p>+7 (495) 221-40-22</p>
-      <From action “” method=“get”>
-        <input type="text" id="name" reqaired>
-        <input type="tel" id="tel" reqaired>
-      </From>
-      <button>Получить консультацию</button>
+    <footer class="footer">
+      <div class="footer_grid">
+        <div class="footer_grid_1">
+          <p class="footer_grid_1_text">
+            Подберем лучшее помещение под ваши задачи, основываясь на аналитике бизнес-среды в локации.
+          </p>
+        </div>
+        <div class="footer_grid_2">
+          <p class="footer_grid_2_text_2">БК “Ясенево”</p>
+        </div>
+        <div class="footer_grid_3">
+          <p class="footer_grid_3_text_3">+7 (495) 221-40-22</p>
+        </div>
+        <div class="footer_grid_4">
+          <From action “” method=“get”>
+            <input type="text" id="name" placeholder="    Ваше имя" reqaired >
+            <input type="tel" id="tel" placeholder="    +7 987 654 32 10" reqaired>
+          </From>
+          <button class="footer_grid_4_button"><a href="/">Получить консультацию</a></button>
+        </div>
+      </div>
     </footer>
   </div>
 </body>
