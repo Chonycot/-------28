@@ -67,7 +67,11 @@
         gap: 10px;
         background: var(--Primary-Blue-100, #2C3878);
         &:hover{
-            transform: scale(1.03);
+            background-color:#2C3878;
+            transform: scale(1.1);
+        }
+        &:active{
+            transform: scale(0.9);
         }
     }
 }
