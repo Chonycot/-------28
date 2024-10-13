@@ -1,11 +1,11 @@
 @import '../variables';
 
 .opis {
-    
+
     padding: 100px 0;
     position: relative;
 
-    &_linia{
+    &_linia {
         color: var($Grayscale50 , #000);
         font-family: 'Montserrat';
         font-size: 16px;
@@ -26,7 +26,7 @@
         }
     }
 
-    &_title{
+    &_title {
         margin-top: 30px;
         width: 713px;
         color: var($Grayscale50 , #333);
@@ -36,26 +36,6 @@
         font-weight: 600;
         line-height: 140%;
     }
-
-    // &_linia {
-    //     position: relative; /* Это нужно для корректного позиционирования псевдоэлемента */
-    //     color: var($Grayscale50 , #000);
-    //     font-family: 'Montserrat';
-    //     font-size: 16px;
-    //     font-style: normal;
-    //     font-weight: 500;
-    //     line-height: 150%;
-    //     text-transform: uppercase;
-    //     &::after {
-    //         position: absolute;
-    //         content: '';
-    //         top: 150px;
-    //         right: 0;
-    //         width: 400px;
-    //         height: 2px;
-    //         background: #000;
-    //     }
-    // }   
 
     &_abz1_p {
         margin-top: 46px;
@@ -84,7 +64,7 @@
 
         &_img {
             float: left;
-            
+
         }
 
         &_p {
@@ -127,14 +107,17 @@
         margin-top: 17px;
         margin-bottom: 100px;
         border: none;
-        &:hover{
-            background-color:#2C3878;
+
+        &:hover {
+            background-color: #2C3878;
             transform: scale(1.1);
         }
-        &:active{
+
+        &:active {
             transform: scale(0.9);
         }
     }
+
     // &_img {
     //     position: fixed;
     //     left: 0;
@@ -143,5 +126,78 @@
     //     height: 436px;
 
 }
-      
 
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+
+    .opis_abz1,
+    .opis_linia {
+        width: 100%;
+    }
+
+    .opis_grid {
+        width: 100%;
+        height: 702px;
+        display: flex;
+        flex-direction: column;
+
+        &_p{
+            width: 343px;
+        }
+
+        &_div {
+            margin-bottom: 25px;
+        }
+    }
+
+    .opis_abz2_p,
+    .opis_button {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .opis {
+        &_linia {
+            width: 74px;
+        }
+
+        &_title {
+            width: 346px;
+            height: auto;
+            font-size: 20px;
+        }
+
+        &_abz1_p,
+        &_abz2_p {
+            width: 300px;
+            font-size: 16px;
+        }
+
+        .opis_abz2_p,
+        .opis_button {
+            margin-left: 0px;
+        }
+
+        .opis_grid {
+            width: 345px;
+            height: 590px;
+            display: flex;
+            flex-direction: column;
+            padding-left: 26px;
+
+            &_img {
+                width: 70px;
+                height: 70px;
+            }
+
+            &_p{
+                width: 193px;
+                font-size: 16px;
+            }
+
+            &_div {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

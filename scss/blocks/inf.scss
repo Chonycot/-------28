@@ -46,61 +46,159 @@
 
         &_1 {
             grid-column: 1 / span 2;
-            grid-row: 1 / 2 ;
-            position: static;
+            grid-row: 1 / 2;
             width: 590px;
             height: 300px;
             flex-shrink: 0;
+            padding: 226px 185px 30px 20px;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 20.17%, rgba(0, 0, 0, 0.00) 100%), url("assets\images\inf 1.png") lightgray 50% / cover no-repeat;
         }
 
         &_2 {
             grid-column: 3 / 4;
-            grid-row: 1 / span 2 ;
-            position: static;
+            grid-row: 1 / span 2;
             width: 290px;
             height: 620px;
             flex-shrink: 0;
+            padding: 500px 37px 30px 20px;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 20.17%, rgba(0, 0, 0, 0.00) 100%), url("assets\images\inf 2.png") lightgray 50% / cover no-repeat;
         }
 
         &_3 {
             grid-column: 4 / 5;
-            grid-row: 1 / 2 ;
-            position: static;
+            grid-row: 1 / 2;
             width: 290px;
             height: 300px;
             flex-shrink: 0;
+            padding: 204px 37px 30px 20px;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 20.17%, rgba(0, 0, 0, 0.00) 100%), url("assets\images\inf 3.png") lightgray 50% / cover no-repeat;
         }
 
         &_4 {
             grid-column: 1 / 2;
-            grid-row: 2 / 3 ;
-            position: static;
+            grid-row: 2 / 3;
             width: 290px;
             height: 300px;
             flex-shrink: 0;
+            padding: 204px 37px 30px 20px;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 20.17%, rgba(0, 0, 0, 0.00) 100%), url("assets\images\inf 4.png") lightgray 50% / cover no-repeat;
         }
 
         &_5 {
             grid-column: 2 / 3;
-            grid-row: 2 / 3 ;
+            grid-row: 2 / 3;
             width: 290px;
             height: 300px;
             flex-shrink: 0;
+            padding: 204px 37px 30px 20px;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 20.17%, rgba(0, 0, 0, 0.00) 100%), url("assets\images\inf 5.png") lightgray 50% / cover no-repeat;
         }
 
         &_6 {
             grid-column: 4 / 5;
-            grid-row: 2 / 3 ;
+            grid-row: 2 / 3;
             width: 290px;
             height: 300px;
             flex-shrink: 0;
+            padding: 204px 37px 30px 20px;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 20.17%, rgba(0, 0, 0, 0.00) 100%), url("assets\images\inf 6.png") lightgray 50% / cover no-repeat;
         }
     }
+
+}
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+    .inf_grid {
+        grid-template-columns: repeat(2, 303px);
+        grid-template-rows: repeat(4, 310px);
+
+        &_1 {
+            grid-column: 1 / span 2;
+            grid-row: 1 / 2;
+            width: 733px;
+            height: 300px;
+            flex-shrink: 0;
+            padding: 226px 318px 30px 20px;
+        }
+
+        &_2 {
+            grid-column: 1 / 2;
+            grid-row: 3 / span 4;
+            width: 354px;
+            height: 610px;
+            flex-shrink: 0;
+            padding: 500px 101px 30px 20px;
+        }
+
+        &_3 {
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+            width: 365px;
+            height: 300px;
+            flex-shrink: 0;
+            padding: 204px 112px 30px 20px;
+        }
+
+        &_4 {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            width: 365px;
+            height: 300px;
+            flex-shrink: 0;
+            padding: 204px 112px 30px 20px;
+        }
+
+        &_5 {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            width: 365px;
+            height: 300px;
+            flex-shrink: 0;
+            padding: 204px 112px 30px 20px;
+        }
+
+        &_6 {
+            grid-column: 2 / 3;
+            grid-row: 4 / 5;
+            width: 365px;
+            height: 300px;
+            flex-shrink: 0;
+            padding: 204px 112px 30px 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .inf {
+        width: 346px;
+        font-size: 20px;
+
+        &_linia {
+            width: 121px;
+        }
+
+        &_grid {
+            display: flex;
+            flex-direction: column;
+
+            &_4, &_5, &_6 {
+                width: 343px;
+                margin-bottom: 10px;
+                padding: 204px 90px 30px 20px;
+            }
+            &_2{
+                width: 343px;
+                height: 610px;
+                padding: 500px 90px 22px 20px; 
+            }
+            &_1{
+                padding: 213px 69px 8px 20px; 
+            }
+            &_3{
+                padding: 226px 90px 22px 20px; 
+            }
+        }
+    }
+
 
 }
