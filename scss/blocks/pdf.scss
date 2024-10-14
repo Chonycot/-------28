@@ -66,12 +66,50 @@
         align-items: flex-start;
         gap: 10px;
         background: var(--Primary-Blue-100, #2C3878);
-        &:hover{
-            background-color:#2C3878;
+
+        &:hover {
+            background-color: #2C3878;
             transform: scale(1.1);
         }
-        &:active{
+
+        &:active {
             transform: scale(0.9);
         }
     }
+}
+
+@media screen and (max-width: 767px) {
+    .pdf {
+        &_linia {
+            font-size: 12px;
+        }
+
+        &_title {
+            width: 312px;
+            font-size: 20px;
+        }
+
+        &_flex {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            &_image {
+                float: left;
+                flex-shrink: 0;
+                margin-left: -250px;
+            }
+
+
+            &_spis {
+                margin-left: 22px;
+                margin-right: 16px;
+                margin-top: 20px;
+                margin-bottom: 26px;
+                width: 346px;
+                font-size: 16px;
+            }
+        }
+    }
+
 }

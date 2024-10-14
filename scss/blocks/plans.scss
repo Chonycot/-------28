@@ -3,7 +3,7 @@
     padding-bottom: 134px;
 
     &_linia {
-        color: var($Grayscale50 , #000);
+        color: var(#000);
         font-family: 'Montserrat';
         font-size: 16px;
         font-style: normal;
@@ -11,6 +11,7 @@
         line-height: 150%;
         text-transform: uppercase;
         margin-bottom: 30px;
+        position: relative; 
 
         &::after {
             position: absolute;
@@ -28,6 +29,7 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 643px);
         justify-content: center;
+        
 
         &_img {
             height: 340px;
@@ -62,14 +64,14 @@
             padding: 14px 34px 14px 32px;
             align-items: flex-start;
             gap: 10px;
-            background: var(--Primary-Blue-100, #2C3878);
+            background: var(#2C3878);
             width: 187px;
             height: 49px;
             border: none;
-            
+
 
             &_a {
-                color: var(--Grayscale-White, #FFF);
+                color: var( #FFF);
                 font-family: Montserrat;
                 font-size: 14px;
                 font-style: normal;
@@ -128,4 +130,46 @@
     }
 
 
+}
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+    .planir {
+        height: 2150px;
+        &_grid {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 643px);
+            justify-content: space-between ;
+            width: 834px;
+            &_1 {
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+    
+            }
+    
+            &_2 {
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+            }
+    
+            &_3 {
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+            }
+    
+            &_4 {
+                grid-column: 2 / 3;
+                grid-row: 2 / 3;
+            }
+    
+            &_5 {
+                grid-column: 1 / 2;
+                grid-row: 3 / 4;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px){
+    .inf_grid {
+        grid-template-columns: 1fr;
+    }
 }

@@ -8,6 +8,7 @@
         font-weight: 500;
         line-height: 150%;
         text-transform: uppercase;
+        position: relative; 
     
         &::after {
             position: absolute;
