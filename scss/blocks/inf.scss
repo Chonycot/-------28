@@ -115,7 +115,6 @@
         &_1 {
             grid-column: 1 / span 2;
             grid-row: 1 / 2;
-            width: 733px;
             height: 300px;
             flex-shrink: 0;
             padding: 226px 318px 30px 20px;
@@ -124,7 +123,6 @@
         &_2 {
             grid-column: 1 / 2;
             grid-row: 3 / span 4;
-            width: 354px;
             height: 610px;
             flex-shrink: 0;
             padding: 500px 101px 30px 20px;
@@ -133,7 +131,6 @@
         &_3 {
             grid-column: 2 / 3;
             grid-row: 3 / 4;
-            width: 365px;
             height: 300px;
             flex-shrink: 0;
             padding: 204px 112px 30px 20px;
@@ -142,7 +139,6 @@
         &_4 {
             grid-column: 1 / 2;
             grid-row: 2 / 3;
-            width: 365px;
             height: 300px;
             flex-shrink: 0;
             padding: 204px 112px 30px 20px;
@@ -151,7 +147,6 @@
         &_5 {
             grid-column: 2 / 3;
             grid-row: 2 / 3;
-            width: 365px;
             height: 300px;
             flex-shrink: 0;
             padding: 204px 112px 30px 20px;
@@ -160,7 +155,6 @@
         &_6 {
             grid-column: 2 / 3;
             grid-row: 4 / 5;
-            width: 365px;
             height: 300px;
             flex-shrink: 0;
             padding: 204px 112px 30px 20px;
@@ -171,11 +165,15 @@
 @media screen and (max-width: 767px) {
     .inf {
         width: 346px;
-        font-size: 20px;
 
         &_linia {
             width: 121px;
             font-size: 12px;
+        }
+
+        &_title{
+            width: 346px;
+            font-size: 20px;
         }
 
         &_grid {
@@ -187,16 +185,27 @@
                 margin-bottom: 10px;
                 padding: 204px 90px 30px 20px;
             }
+            &_4{
+                order: -2;
+            }
+            &_5{
+                order: -3;
+            }
             &_2{
                 width: 343px;
                 height: 610px;
                 padding: 500px 90px 22px 20px; 
+                margin-bottom: 10px;
             }
             &_1{
-                padding: 213px 69px 8px 20px; 
+                width: 343px;
+                padding: 213px 69px 8px 20px;
+                margin-bottom: 10px; 
             }
             &_3{
-                padding: 226px 90px 22px 20px; 
+                width: 343px;
+                padding: 226px 90px 22px 20px;
+                margin-bottom: 10px;
             }
         }
     }
